@@ -1,0 +1,10 @@
+{
+  "server": {
+    "port": 8080
+  },
+  "marketplace_db": {
+    "user": "root",
+    "password": "root",
+    "db_name": "marketplace"
+  }
+}
