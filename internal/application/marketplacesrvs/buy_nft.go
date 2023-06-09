@@ -2,7 +2,7 @@ package marketplacesrvs
 
 import (
 	"context"
-	"ssr/internal/domain"
+	"nft-crud-service/internal/domain"
 )
 
 type BuyNftInput struct {

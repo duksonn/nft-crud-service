@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"ssr/pkg/server"
+	"nft-crud-service/pkg/server"
 )
 
 func (h *handler) FindNfts(w http.ResponseWriter, r *http.Request) {

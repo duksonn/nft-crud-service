@@ -4,7 +4,7 @@
   },
   "marketplace_db": {
     "user": "root",
-    "password": "root",
+    "password": "admin123",
     "db_name": "marketplace"
   }
 }

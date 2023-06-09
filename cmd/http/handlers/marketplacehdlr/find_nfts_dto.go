@@ -2,8 +2,8 @@ package marketplacehdlr
 
 import (
 	"net/http"
-	"ssr/internal/application/marketplacesrvs"
-	"ssr/pkg/server"
+	"nft-crud-service/internal/application/marketplacesrvs"
+	"nft-crud-service/pkg/server"
 )
 
 type findNftsRequest struct {

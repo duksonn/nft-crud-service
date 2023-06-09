@@ -1,7 +1,7 @@
 package dto
 
 import (
-	"ssr/internal/domain"
+	"nft-crud-service/internal/domain"
 	"strings"
 )
 

@@ -5,8 +5,8 @@ import (
 	"github.com/gorilla/mux"
 	"log"
 	"net/http"
-	"ssr/cmd/config"
-	"ssr/cmd/dependencies"
+	"nft-crud-service/cmd/config"
+	"nft-crud-service/cmd/dependencies"
 )
 
 func StartServer(cfg *config.Config, dep *dependencies.Dependencies) error {

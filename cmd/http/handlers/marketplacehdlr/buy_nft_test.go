@@ -8,7 +8,7 @@ import (
 	"github.com/stretchr/testify/assert"
 	"net/http"
 	"net/http/httptest"
-	"ssr/internal/domain"
+	"nft-crud-service/internal/domain"
 	"testing"
 	"time"
 )

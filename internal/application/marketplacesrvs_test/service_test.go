@@ -2,8 +2,8 @@ package marketplacesrvs_test
 
 import (
 	"github.com/golang/mock/gomock"
-	"ssr/internal/application/marketplacesrvs"
-	"ssr/mocks/mockgen"
+	"nft-crud-service/internal/application/marketplacesrvs"
+	"nft-crud-service/mocks/mockgen"
 	"testing"
 )
 

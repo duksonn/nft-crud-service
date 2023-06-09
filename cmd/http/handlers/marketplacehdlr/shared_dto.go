@@ -1,6 +1,6 @@
 package marketplacehdlr
 
-import "ssr/internal/domain"
+import "nft-crud-service/internal/domain"
 
 type nftResponse struct {
 	Id          string   `json:"id"`

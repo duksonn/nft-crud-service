@@ -6,8 +6,8 @@ package mocks
 
 import (
 	context "context"
+	domain "nft-crud-service/internal/domain"
 	reflect "reflect"
-	domain "ssr/internal/domain"
 
 	gomock "github.com/golang/mock/gomock"
 )

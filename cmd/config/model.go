@@ -1,7 +1,7 @@
 package config
 
 import (
-	"ssr/internal/infra/markepplacerepo"
+	"nft-crud-service/internal/infra/markepplacerepo"
 )
 
 type ServerConfig struct {

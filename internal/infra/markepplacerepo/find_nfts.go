@@ -3,8 +3,8 @@ package markepplacerepo
 import (
 	"context"
 	"database/sql"
-	"ssr/internal/domain"
-	"ssr/internal/infra/markepplacerepo/dto"
+	"nft-crud-service/internal/domain"
+	"nft-crud-service/internal/infra/markepplacerepo/dto"
 )
 
 func (m *MysqlRepository) FindNfts(ctx context.Context, next, took *int) (*domain.NftList, error) {

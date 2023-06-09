@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
+	"nft-crud-service/cmd/config"
+	"nft-crud-service/cmd/dependencies"
+	"nft-crud-service/cmd/http"
 	"os"
 	"os/signal"
-	"ssr/cmd/config"
-	"ssr/cmd/dependencies"
-	"ssr/cmd/http"
 )
 
 func main() {

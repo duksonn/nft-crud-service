@@ -2,8 +2,8 @@ package marketplacehdlr
 
 import (
 	"github.com/golang/mock/gomock"
-	"ssr/internal/application/marketplacesrvs"
-	mocks "ssr/mocks/mockgen"
+	"nft-crud-service/internal/application/marketplacesrvs"
+	mocks "nft-crud-service/mocks/mockgen"
 	"testing"
 )
 

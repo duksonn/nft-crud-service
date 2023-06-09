@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 	"fmt"
-	"ssr/internal/domain"
-	"ssr/internal/infra/markepplacerepo/dto"
+	"nft-crud-service/internal/domain"
+	"nft-crud-service/internal/infra/markepplacerepo/dto"
 )
 
 func (m *MysqlRepository) GetNftById(ctx context.Context, nftId string) (*domain.Nft, error) {

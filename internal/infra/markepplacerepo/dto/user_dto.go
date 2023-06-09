@@ -1,6 +1,6 @@
 package dto
 
-import "ssr/internal/domain"
+import "nft-crud-service/internal/domain"
 
 type UserMsg struct {
 	Id      string

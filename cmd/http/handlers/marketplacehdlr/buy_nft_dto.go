@@ -5,7 +5,7 @@ import (
 	"errors"
 	"io/ioutil"
 	"net/http"
-	"ssr/internal/application/marketplacesrvs"
+	"nft-crud-service/internal/application/marketplacesrvs"
 )
 
 type buyNftRequest struct {

@@ -5,9 +5,9 @@ import (
 	"errors"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/assert"
-	"ssr/internal/application/marketplacesrvs"
-	"ssr/internal/domain"
-	"ssr/pkg/utils"
+	"nft-crud-service/internal/application/marketplacesrvs"
+	"nft-crud-service/internal/domain"
+	"nft-crud-service/pkg/utils"
 	"testing"
 	"time"
 )

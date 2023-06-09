@@ -2,8 +2,8 @@ package marketplacesrvs
 
 import (
 	"context"
-	"ssr/internal/domain"
-	"ssr/pkg/utils"
+	"nft-crud-service/internal/domain"
+	"nft-crud-service/pkg/utils"
 	"time"
 )
 

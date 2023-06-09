@@ -6,9 +6,9 @@ package mocks
 
 import (
 	context "context"
+	marketplacesrvs "nft-crud-service/internal/application/marketplacesrvs"
+	domain "nft-crud-service/internal/domain"
 	reflect "reflect"
-	marketplacesrvs "ssr/internal/application/marketplacesrvs"
-	domain "ssr/internal/domain"
 
 	gomock "github.com/golang/mock/gomock"
 )

@@ -1,9 +1,9 @@
 package dependencies
 
 import (
-	"ssr/cmd/config"
-	"ssr/internal/application/marketplacesrvs"
-	"ssr/internal/infra/markepplacerepo"
+	"nft-crud-service/cmd/config"
+	"nft-crud-service/internal/application/marketplacesrvs"
+	"nft-crud-service/internal/infra/markepplacerepo"
 )
 
 type Dependencies struct {

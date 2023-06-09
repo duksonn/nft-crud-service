@@ -3,8 +3,8 @@ package markepplacerepo
 import (
 	"context"
 	"fmt"
-	"ssr/internal/domain"
-	"ssr/internal/infra/markepplacerepo/dto"
+	"nft-crud-service/internal/domain"
+	"nft-crud-service/internal/infra/markepplacerepo/dto"
 )
 
 func (m *MysqlRepository) SaveNft(ctx context.Context, nft domain.Nft) (*domain.Nft, error) {

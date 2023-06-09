@@ -6,8 +6,8 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -o /ssr-service
+RUN go build -o /nft-crud-service
 
 EXPOSE 8080
 
-CMD [ "/ssr-service" ]
+CMD [ "/nft-crud-service" ]

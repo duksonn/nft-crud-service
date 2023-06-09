@@ -2,7 +2,7 @@ package marketplacesrvs
 
 import (
 	"context"
-	"ssr/internal/domain"
+	"nft-crud-service/internal/domain"
 )
 
 //go:generate mockgen -source=./service.go -package=mocks -destination=../../../mocks/mockgen/marketplace_services.go

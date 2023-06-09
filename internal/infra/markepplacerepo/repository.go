@@ -4,8 +4,9 @@ import (
 	"context"
 	"database/sql"
 	"fmt"
+	"nft-crud-service/internal/domain"
+
 	_ "github.com/go-sql-driver/mysql"
-	"ssr/internal/domain"
 )
 
 type MysqlRepository struct {
@@ -24,7 +25,7 @@ const UserTable = "user"
 var _ domain.MarketplaceRepository = (*MysqlRepository)(nil)
 
 func NewRepository(config MysqlConfig) MysqlRepository {
-	db, err := sql.Open("mysql", fmt.Sprintf("%v:%v@tcp(localhost:33066)/%v", config.User, config.Password, config.DbName))
+	db, err := sql.Open("mysql", fmt.Sprintf("%v:%v@tcp(localhost:3306)/%v", config.User, config.Password, config.DbName))
 	if err != nil {
 		panic(err)
 	}

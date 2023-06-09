@@ -1,6 +1,6 @@
 package marketplacehdlr
 
-import "ssr/internal/application/marketplacesrvs"
+import "nft-crud-service/internal/application/marketplacesrvs"
 
 type handler struct {
 	services marketplacesrvs.Service

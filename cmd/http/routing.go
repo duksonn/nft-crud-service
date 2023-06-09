@@ -3,8 +3,8 @@ package http
 import (
 	"github.com/gorilla/mux"
 	"net/http"
-	"ssr/cmd/dependencies"
-	"ssr/cmd/http/handlers/marketplacehdlr"
+	"nft-crud-service/cmd/dependencies"
+	"nft-crud-service/cmd/http/handlers/marketplacehdlr"
 )
 
 func routes(router mux.Router, dep *dependencies.Dependencies) *mux.Router {

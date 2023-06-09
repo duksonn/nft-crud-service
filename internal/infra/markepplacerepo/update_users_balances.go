@@ -3,8 +3,8 @@ package markepplacerepo
 import (
 	"context"
 	"fmt"
-	"ssr/internal/domain"
-	"ssr/internal/infra/markepplacerepo/dto"
+	"nft-crud-service/internal/domain"
+	"nft-crud-service/internal/infra/markepplacerepo/dto"
 )
 
 func (m *MysqlRepository) UpdateUsersBalances(ctx context.Context, balances map[string]float64) ([]domain.User, error) {
