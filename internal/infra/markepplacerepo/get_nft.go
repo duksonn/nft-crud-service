@@ -9,7 +9,7 @@ import (
 )
 
 func (m *MysqlRepository) GetNftById(ctx context.Context, nftId string) (*domain.Nft, error) {
-	var nftMsg dto.NftMsg
+	var nftMsg dto.NftDTO
 	err := m.findOne(ctx, nftId, NftTable).Scan(
 		&nftMsg.Id,
 		&nftMsg.Image,

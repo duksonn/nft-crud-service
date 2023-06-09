@@ -33,7 +33,7 @@ func (m *MysqlRepository) UpdateUsersBalances(ctx context.Context, balances map[
 
 	var users []domain.User
 	for res.Next() {
-		var userResponse dto.UserMsg
+		var userResponse dto.UserDTO
 		err := res.Scan(&userResponse.Id, &userResponse.Balance)
 		if err != nil {
 			return nil, err

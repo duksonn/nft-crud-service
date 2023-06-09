@@ -15,18 +15,18 @@ type CreateNftInput struct {
 }
 
 func (s *MarketplaceServices) CreateNft(ctx context.Context, input *CreateNftInput) (*domain.Nft, error) {
-	/** validate coCreators */
+	/** Validate coCreators */
 	err := s.validateCoCreators(ctx, input.CoCreators)
 	if err != nil {
 		return nil, err
 	}
 
-	/** create NFT */
-	id := utils.GenerateUuid()
-	now := time.Now().Format(time.RFC3339)
-	nft := domain.NewNft(id, input.Image, input.Description, input.User, input.CoCreators, now, input.User)
+	/** Create NFT */
+	var id = utils.GenerateUuid()
+	var now = time.Now().Format(time.RFC3339)
+	var nft = domain.NewNft(id, input.Image, input.Description, input.User, input.CoCreators, now, input.User)
 
-	/** insert database */
+	/** Save NFT */
 	nftRes, err := s.marketplaceRepository.SaveNft(ctx, *nft)
 	if err != nil {
 		return nil, err

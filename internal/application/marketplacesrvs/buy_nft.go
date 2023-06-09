@@ -12,26 +12,26 @@ type BuyNftInput struct {
 }
 
 func (s *MarketplaceServices) BuyNft(ctx context.Context, input *BuyNftInput) (*domain.NftUsers, error) {
-	/** validate is buyer exist in db */
+	/** Validate is buyer exist in db */
 	buyer, err := s.marketplaceRepository.GetUserById(ctx, input.BuyerId)
 	if err != nil {
 		return nil, err
 	}
 
-	/** get nft to sell */
+	/** Get NFT to sell */
 	nft, err := s.marketplaceRepository.GetNftById(ctx, input.NftId)
 	if err != nil {
 		return nil, err
 	}
 
-	/** update balances */
+	/** Update balances */
 	users, err := s.updateBalances(ctx, *nft, input.Amount, *buyer)
 	if err != nil {
 		return nil, err
 	}
 
-	/** save new nft */
-	coCreators := nft.CoCreators()
+	/** Save new NFT */
+	var coCreators = nft.CoCreators()
 	coCreators = append(coCreators, nft.Owner())
 	newNft := domain.NewNft(nft.Id(), nft.Image(), nft.Description(), input.BuyerId, coCreators, nft.CreatedAt(), nft.CreatedBy())
 	savedNft, err := s.marketplaceRepository.SaveNft(ctx, *newNft)

@@ -39,7 +39,7 @@ func (m *MysqlRepository) FindNfts(ctx context.Context, next, took *int) (*domai
 
 	var nfts []domain.Nft
 	for res.Next() {
-		var nftResponse dto.NftMsg
+		var nftResponse dto.NftDTO
 		err := res.Scan(
 			&nftResponse.Id,
 			&nftResponse.Image,

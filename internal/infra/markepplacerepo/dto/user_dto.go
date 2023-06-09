@@ -2,17 +2,17 @@ package dto
 
 import "nft-crud-service/internal/domain"
 
-type UserMsg struct {
+type UserDTO struct {
 	Id      string
 	Balance float64
 }
 
-func (u *UserMsg) ToUserDomain() *domain.User {
+func (u *UserDTO) ToUserDomain() *domain.User {
 	return domain.NewUser(u.Id, u.Balance)
 }
 
-func FromUserDomain(user domain.User) UserMsg {
-	return UserMsg{
+func FromUserDomain(user domain.User) UserDTO {
+	return UserDTO{
 		Id:      user.Id(),
 		Balance: user.Balance(),
 	}

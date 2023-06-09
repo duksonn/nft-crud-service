@@ -9,7 +9,7 @@ import (
 )
 
 func (m *MysqlRepository) GetUserById(ctx context.Context, userId string) (*domain.User, error) {
-	var userMsg dto.UserMsg
+	var userMsg dto.UserDTO
 	err := m.findOne(ctx, userId, UserTable).Scan(&userMsg.Id, &userMsg.Balance)
 	if err != nil {
 		if err.Error() == "sql: no rows in result set" {

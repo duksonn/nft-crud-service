@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-type NftMsg struct {
+type NftDTO struct {
 	Id          string
 	Image       string
 	Description string
@@ -15,7 +15,7 @@ type NftMsg struct {
 	CreatedBy   string
 }
 
-func (n *NftMsg) ToNftDomain() *domain.Nft {
+func (n *NftDTO) ToNftDomain() *domain.Nft {
 	coCreators := transformCoCreatorsToStringList(&n.CoCreators)
 	return domain.NewNft(
 		n.Id,
@@ -28,9 +28,9 @@ func (n *NftMsg) ToNftDomain() *domain.Nft {
 	)
 }
 
-func FromNftDomain(nft domain.Nft) NftMsg {
+func FromNftDomain(nft domain.Nft) NftDTO {
 	coCreators := transformCoCreatorsToString(nft.CoCreators())
-	return NftMsg{
+	return NftDTO{
 		Id:          nft.Id(),
 		Image:       nft.Image(),
 		Description: nft.Description(),
@@ -56,7 +56,7 @@ func transformCoCreatorsToStringList(coCreators *string) []string {
 }
 
 type NftListMsg struct {
-	Data []NftMsg
+	Data []NftDTO
 	Next *int
 	Took *int
 }
